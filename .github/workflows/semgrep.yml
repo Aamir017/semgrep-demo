@@ -31,7 +31,7 @@ jobs:
       run: semgrep --config p/security-audit --sarif --output semgrep.sarif --error
 
     - name: Run Semgrep (custom rules)
-      run: semgrep --config semgrep-rules/ --sarif --output semgrep-custom.sarif --error --exit-zero
+      run: semgrep --config semgrep-rules/ --sarif --output semgrep-custom.sarif --error || true
 
     - name: Upload SARIF to GitHub Code Scanning
       uses: github/codeql-action/upload-sarif@v3
