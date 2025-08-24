@@ -1,0 +1,11 @@
+rules:
+  - id: avoid-fstring-sql
+    languages: [python]
+    severity: ERROR
+    message: "Possible SQL injection: avoid building queries with f-strings."
+    patterns:
+      - pattern: |
+          $C.execute(f"...")
+    metadata:
+      category: security
+      cwe: "CWE-89"
