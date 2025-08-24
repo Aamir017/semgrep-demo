@@ -43,13 +43,12 @@ semgrep-poc/
 └─ README.md
 ```
 Summary
-Once you push this repo to GitHub, you get:
+- Once you push this repo to GitHub, you get:
 
-Local scans for quick feedback
+- Local scans for quick feedback
 
-CI enforcement to catch issues during PRs
+- CI enforcement to catch issues during PRs
 
-Optional dashboards: GitHub Code Scanning or Semgrep Cloud
 
 This PoC demonstrates how to integrate Semgrep in both local and CI/CD workflows, including custom security rules.
 
