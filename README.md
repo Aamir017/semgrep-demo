@@ -2,7 +2,7 @@
 
 ## What This Shows
 - Local Semgrep scanning with **community and custom rules**  
-- CI/CD integration (**GitHub Actions** / **Jenkins**)  
+- CI/CD integration (**GitHub Actions** ) 
 - **SARIF upload** to GitHub Code Scanning  
 
 
