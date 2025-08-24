@@ -29,18 +29,20 @@ semgrep-rules/no-sqli.yaml
 ```
 Final Repo Layout 
 ```perl
-semgrep-poc/
-├─ app.py
-├─ requirements.txt
-├─ .semgrepignore
-├─ semgrep-rules/
-│  └─ no-sqli.yaml
-├─ .github/
-│  └─ workflows/
-│     ├─ semgrep.yml
-│     └─ semgrep-sarif.yml
-├─ Jenkinsfile
-└─ README.md
+semgrep-demo/
+├── app/
+│   └── app.py             # Main application code
+├── tests/
+│   └── test_app.py        # Unit tests
+├── semgrep-rules/
+│   └── no-sqli.yaml       # Custom security rule example
+├── requirements.txt
+├── .semgrepignore
+├── .github/
+│   └── workflows/
+│       └── semgrep.yml    # GitHub Actions workflow
+└── README.md
+
 ```
 Summary
 - Once you push this repo to GitHub, you get:
